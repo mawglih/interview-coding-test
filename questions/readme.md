@@ -1,0 +1,1 @@
+This folder contains list of tasks and their solutions for the candidate interviews
