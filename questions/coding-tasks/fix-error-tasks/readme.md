@@ -1,0 +1,1 @@
+All tasks require candidate to fix error in code
