@@ -1,0 +1,129 @@
+.item {
+    width: 200px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 10px 40px 10px;
+}
+
+.clickDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.clickDiv>img {
+    width: 200px;
+    height: 200px;
+}
+
+.cont {
+    width: 1000px;
+    height: auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    column-gap: 20px;
+    row-gap: 30px;
+}
+
+.storeTitle {
+    text-align: center;
+    color: darkslategrey;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.myBadge {
+    margin-bottom: 10px;
+}
+
+.title {
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+
+/* modal */
+
+.modalCont {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.modalDialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modalContent {
+    width: 400px;
+    height: 600px;
+    background: white;
+    color: white;
+    z-index: 10;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+    padding: 10px;
+}
+
+.modalHeader {
+    height: 50px;
+    background-color: white;
+    color: brown;
+    overflow: hidden;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.modalFooter {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(-5%, -15%);
+}
+
+.modalImage {
+    width: 300px;
+    height: 400px;
+}
+
+.modalImage>img {
+    width: 100%;
+    max-height: 90%;
+}
+
+.modalBodyCont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalBody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.modalPrice {
+    color: brown;
+}
+
+.modalTitle {
+    text-align: center;
+    text-transform: capitalize;
+}
