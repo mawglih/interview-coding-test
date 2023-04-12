@@ -1,0 +1,86 @@
+What are the different types of Selectors in CSS? 
+JUNIOR
+
+What is the difference between inline, inline-block, and block? 
+JUNIOR
+
+What are Pseudo elements and Pseudo classes? 
+MID
+
+What is a z-index? 
+JUNIOR
+
+What are the properties of flexbox? 
+JUNIOR
+
+Explain CSS position property? What is Difference between position sticky, absolute and fixed? 
+SENIOR
+
+Explain @media properties, What media will be used for print? 
+SENIOR
+
+Explain the difference between visibility: hidden and display: none? 
+MID
+
+What do the following CSS selectors mean? 
+MID
+
+div, p
+
+div p
+
+div ~ p
+
+div + p
+
+div + p
+
+What is box model? 
+MID
+
+What is responsive web design?  
+MID
+
+What is difference between class and id?  
+JUNIOR
+
+How can you apply CSS styling (without JS) - 3 methods.  
+JUNIOR
+
+What are the css box model?  
+JUNIOR
+
+What are CSS preprocessor examples?
+
+What are Pseudo classes? Give an example.  
+MID
+
+What are units that you can use in CSS (px, em, %, pt)  
+MID
+
+Does margin-top or margin-bottom have an effect on inline elements?  
+MID
+
+Name different box sizing property? (content-box, padding-box, border-box).  
+MID
+
+How do you restore the default value of the property. (initial)  
+MID
+
+Explain difference between CSS grid and flexbox. (2-dimensional vs 1-dimensional)  
+MID
+
+How to overwrite specificity in CSS? (!important)  
+MID
+
+Name different ways to position some aspects in CSS (fixed, static, absolute, sticky, relative).  What is the difference?
+SENIOR
+
+What is pseudo-element in CSS? Give and example. 
+SENIOR
+
+What is a mixin? 
+SENIOR
+
+What is difference between CSS and styled Components? How will you use border-radius in Styled? 
+SENIOR

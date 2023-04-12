@@ -1,0 +1,71 @@
+Explain difference between bubble, selection and merge sort.
+
+How can you copy an array? Is it a shallow or a deep copy? What is the difference? (for senior - ask to give an example of deep copy of array). 
+SENIOR
+
+I have strict dependences in my app and need to install particular version of module ‘foo’, After running npm -i foo@6.0, I see that in package.json file my version of foo is 6.012. What can I do to avoid it? 
+(npm -i foo@6.0 --save-exact).  
+SENIOR
+
+In the new version of npm (v7), by default, npm install will fail when it encounters conflicting peerDependencies. What can you do to bypass that limitation and use older version of module? 
+(2 switches can be mentioned here: 
+SENIOR
+
+--legacy-peer-deps: ignore all peerDependencies when installing, in the style of npm version 4 through version 6.
+
+--strict-peer-deps: fail and abort the install process for any conflicting peerDependencies when encountered. By default, npm will only crash for peerDependencies conflicts caused by the direct dependencies of the root project.
+
+What are the Generator functions? 
+SENIOR
+
+Difference b/w Promise and Callback?  
+MID
+
+Difference b/w Callback and Callback hell?  
+MID
+
+What is the tree shaking process?  
+SENIOR
+
+Difference b/w Async and Sync calls. 
+MID
+
+What is Object.freeze(). Explain with Example. 
+MID
+
+What is cancelToken in Axios request? 
+SENIOR
+
+How you can explain Object.defineProperty()?
+MID
+
+How do we run forEach on given Object? 
+MID
+
+
+{
+  "person_one_score": [{"name": "foo", "score":5}],
+  "person_two_score": [{"name": "bar", "score":6}],
+} 
+ What is hoisting?  
+MID
+
+Explain difference between let and var  
+MID
+
+Can you use that snippet?   
+MID
+
+
+useMyFunction(a,b)();
+
+function useMyFunction(n, s) {
+  ....
+  return answer;
+}
+ 
+
+
+useMyFunction(a,b)();
+
+const useMyFunction = (n, s)  => parseInt(s) + a;

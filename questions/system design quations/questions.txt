@@ -1,0 +1,238 @@
+1. URL shortening service. 
+SENIOR
+
+Task: We need to design URL shortening service (like google or amazon uses).
+
+Millions of redirect and scalability to grow
+
+Think about characters to be used
+
+Make it 6 characters or shorter
+
+ Anything for registered users (or paid service)?
+
+Editing and deleting shortened urls.
+
+How long shortened url should last? We think about forever.
+
+What API’s you need to implement here.
+
+How does redirection works at massive scale?
+
+Possible answer:
+
+Good answer, when worked backward from customer experience.
+
+Explain API needed:
+
+Non registered users can create a short url 
+
+
+const apiUnreg = async (longUrl) => {
+  //call some api
+  const response = await someApi();
+  return = { status: xxx, shortUrl: xxx}
+}
+Registered users can create short urls, use the possible name they want and save them in their account. If unavailable they will receive a rejection and message. 
+
+
+const apiReg = async (longUrl, userid, name) => {
+  //call some api
+  const response = await someApi();
+  return  { status: xxx, shortUrl: xxx, message: ''}
+}
+Registered users can update and delete they short urls 
+
+
+const updateShortUrl = async (userId, shortUrl, newName) => {
+  const response = await someApi();
+  return { status: xxx, message: ''}
+}
+
+const deleteShosrtUrl = async (userId, shortUrl) => {
+  const response = await someApi();
+  return { status: xxx, message: ''}
+}
+Registered users can retrieve their urls 
+
+
+const getMyUrls = async (userId) => {
+  const response = await someApi();
+  return { status: xxx, urls: [url1, url2...]}
+}
+Horizontal scalability is good for that system. Candidate can draw a picture if possible of server placement, caching solution
+
+Propose a distributed database. Can touch base on the database choice and why is it selected.
+
+Some details can be mentioned on scalability, availability, security and cost.
+_______________________________________
+_______________________________________
+
+2. Restaurant reservation system. 
+SENIOR
+
+Task: Design and explain reservation system like OpenTable.
+
+Possible answer:
+
+The best solution will start from user experience first. 
+
+User wants to select a restaurant, enter party size, find list of available times, lock reservation and get confirmation via SMS and email
+
+User needs a way to change or cancel reservations
+
+Probably in user profile will be good to see previous reservations
+
+Good to have access to restaurant reviews and also a way to write your own review on previous reservations.
+
+System should be scalable and reliable. The cost is least important. We expect thousands of restaurants and 100 thousands of users
+
+On another side restaurant is also a customer. they need access:
+
+Reporting
+
+Analytics
+
+A way to contact reservation holders
+
+A way to organize tables for different parties
+
+System should have a scalable database on backend.
+
+Three tables Restaurant, Customer, Reservation. Each table should have connection thru ID
+
+Horizontal design with distributed servers with load-balancer for fornt-end
+
+geo-routing
+
+CDN
+
+SMS notification system that connects to backend
+
+Caching solution for database queries (customer table and restaurant tables are not changed often)
+
+Horizontal vs Vertical scaling (ACID, CAP theorem). 
+SENIOR
+
+Task: Explain scaling data technologies. Compare Horizontal and Vertical scaling. What is ACID compliance. What is CAP theorem.
+
+Possible answer:
+
+SQL and NO-SQL databases. Mongo, Cassandra, Dynamo DB, MySQL, MS SQL, Oracle and others.
+
+Vertical scaling - putting bigger devices and more powerful servers
+
+Horizontal scaling
+
+Sharding database
+
+Failover methods - cold, warm, hot standby
+
+Primary / secondary nodes, all primary nodes
+
+Data lakes
+
+ACID:
+
+Atomicity - either entire operation completed, or entire thing fails
+
+Consistency - all rules are enforced, or transaction rolled back
+
+Isolation - transactions are not effected by other transactions
+
+Durability - if transaction committed it stays, even the system crashed
+
+CAP theorem: you can have any 2 of them but not three.
+
+Consistency - Availability - Partition-Tolerance
+
+Here candidate can give an example of databases and what they offer (2 out of 3)
+
+Caching technologies and their examples. 
+SENIOR
+
+Task: Define what caching is. Explain caching technologies and give example of caching strategies.
+
+Possible answer:
+
+Caching is data storage that enables high-speed fast access to computed or previously retrieved data rather than accessing its primary storage location.
+
+How it works
+
+Horizontally scaled server solution. For vertical scale only caching solution will be database caching layer, to prevent from searching of the same data
+
+Clients can also hash requests to a given server (in-memory)
+
+Caching appropriate for app with more reads than writes
+
+The expiration policy is very important - too log and data can become stale.
+
+Problems  with caching:
+
+Hotspots - example IMDB and many people search for Harry Potter. The distributed of Harry otter needs to be implemented
+
+Cold-start - initial call before cache rebuild, all goes to DB. DB can crash. Possibly needed to implement warm-up cache layer
+
+Eviction policy on caching:
+
+LRU - least recently used
+
+LFU - least frequently used
+
+FIFO - first in first out
+
+Memcached
+
+in-memory
+
+open source
+
+Redis
+
+Many features
+
+Snapshots, replication, transactions
+
+Advanced data structure
+
+Very complex in general, require additional education or separate “cache-engineer”
+
+Ncache
+
+made for .Net, Java, Node.js
+
+Ehcache
+
+for Java
+
+It is a distributed map of data
+
+ElasticCache
+
+AWS solution
+
+It is  fully managed AWS Redis or Memcached
+
+CDN - content delivery network - another solution for caching and get data
+
+Geographically distributed
+
+Local hosting of data
+
+Some limited computation
+
+Mainly used for static content
+
+CDN examples:
+
+AWS CloudFront
+
+Google Cloud CDN
+
+Microsoft Azure CDN
+
+Akamai
+
+Cloudflare
+
+Fastly

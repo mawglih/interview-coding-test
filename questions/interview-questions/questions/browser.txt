@@ -1,0 +1,30 @@
+What is History API?  
+JUNIOR
+ 
+
+What is difference between session and local storage?  
+JUNIOR
+
+How to set a cookie for 1 week?  
+JUNIOR
+
+Explain DOM Breakpoints. 
+JUNIOR
+
+How do we force a state(hover/focus…) on element?  
+JUNIOR
+
+What is intentional slowing down of internet speed? How do we do that in chrome? 
+MID
+
+How do we find the OS and browser of User? 
+MID
+
+What is a preflight request? 
+MID
+
+What is Lighthouse in Chrome?  How do we generate Reports? 
+SENIOR
+
+What is difference between Incognito Browsing and normal Browsing? 
+JUNIOR

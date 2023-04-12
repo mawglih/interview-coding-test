@@ -1,0 +1,23 @@
+What is difference b/w beforeAll and beforeEach in test suite?  
+MID
+
+How do we check if function is called or not? 
+MID
+
+How do we add not operator in expect function? 
+JUNIOR
+
+How do we mock a function? 
+MID
+
+How do we fire a click event in unit test? 
+JUNIOR
+
+Explain getByText function?
+JUNIOR
+
+Mock a Axios call and verify the response. 
+MID
+
+How do we re-render the component from the unit test? 
+MID

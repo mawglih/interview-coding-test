@@ -1,0 +1,5 @@
+Find a poisoned bottle.
+A Person in a cell and there are 4 wine bottles and a rat. One of the bottles contains poisoned wine. Rat dies after 16 hours of drinking the poisoned wine. Person need to drink at least one bottle to survive in 24 hours, How does he find out the poisoned bottle?
+
+Find the invalid coin.
+You have 10 machines producing 10 gram coins every second. Suddenly one machine got broken and started to give out 9 gram coins. Your task to identify it immediately or get fired. Your greedy boss gave you an electronic weighs that have a battery charge for only 1 operation, so you have as many coins needed from each machine and 1 attempt to identify the faulty machine.

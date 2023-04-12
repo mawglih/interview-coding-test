@@ -1,0 +1,70 @@
+Explain when is Lifecycle method is called? 
+JUNIOR
+
+In React class-based components, what is difference in props and state? 
+JUNIOR
+
+Why the following snippet can throw an error? How to avoid it? 
+JUNIOR
+
+
+<div>{data.user.name}</div>
+What are main components of Redux? What are them functions? 
+MID
+
+In Class based components, How do we prevent react from re-rendering the whole component? 
+MID
+
+What is react reconciliation? 
+JUNIOR
+
+ What is React fragment? 
+JUNIOR
+
+What are portals in React? 
+MID
+
+What is useContext hook?  
+MID
+
+What are the refs used for? 
+JUNIOR
+
+What is the role of manifest.json in React application? 
+MID
+
+Explain Lazy loading. 
+SENIOR
+
+What are the synthetic events in React?. 
+MID
+
+What is SSR vs CSR, Does react support SSR?  Explain How do we implement SSR for React application?   
+SENIOR
+
+What is React concurrent rendering and concurrent features? in which version available? 
+SENIOR
+
+How do we can set the priority of task in react function? 
+SENIOR
+
+Please list all LCM in the order they are invoked.  
+SENIOR
+
+Explain useEffect hook.  
+MID
+ Give a parallel with LCM used.  
+SENIOR
+
+Explain Redux setup (store - actions - reducers).  
+MID
+
+How Redux address async actions. Give an example.  
+SENIOR
+
+What is React-Redux used for?  
+MID
+
+useDispatch and useSelector hooks. What was used before those hooks?  
+SENIOR
+
